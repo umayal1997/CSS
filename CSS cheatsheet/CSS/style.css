@@ -1,0 +1,257 @@
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+body{
+	background-color: coral;
+	color: #555555;
+
+	/*font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	/*font-weight: bold;
+	font-weight: normal;
+	*/
+    /* same as above*/
+	font: normal 16px Arial, Helvetica, sans-serif;
+
+	line-height:1.6em;
+	margin: 0;
+}
+
+a{/*applies to all the links in the page*/
+	text-decoration: none;
+	color:#000;/*black*/
+}
+
+a:hover{
+	color: red;
+}
+
+a:active{
+	color: green;
+}
+
+a:visited{
+	/*color: yellow;*/
+}
+
+
+
+
+.container{
+	/*width: 960px;*/
+	width: 80%;
+	margin: auto;
+}
+
+
+
+
+.button{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border:none;
+}
+
+.button:hover{
+	background: red;
+	color: black;
+}
+
+.clr{
+	clear: both;
+}
+
+
+
+.box-1{
+	background-color: #333333;
+	color: #fff;
+
+	/*border-right: 5px red solid;
+	border-left: 5px red solid;
+	border-top: 5px red solid;
+	border-bottom: 5px red solid;
+
+	border: 5px red solid;
+	border-width: 3px;
+	border-bottom-width: 10px;
+	border-top-style: dotted;*/
+
+	border: 5px red solid;
+	
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+     /*same as above*/
+	padding: 20px;
+
+	margin-top: 20px;
+
+	margin: 20px 0; /* 0 for right and left*/
+
+	
+
+	}
+
+.box-1 h1{
+
+	font-family: tahoma;
+	font-weight: 800;
+	font-style: italic;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	word-spacing: 1em;
+}
+
+.box-2{
+	border:3px dotted #ccc;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.categories{
+	border:1px #ccc solid;
+	padding: 10px;
+	border-radius: 25px;
+
+}
+
+.categories h2{
+	text-align: center;
+}
+
+.categories ul{
+	padding: 0;
+	padding-left: 20px;
+	list-style: square;
+	list-style: none;
+}
+
+.categories li{
+	padding-bottom: 8px;
+	border-bottom: dotted 1px #333;
+	list-style-image: url('../images/check.png');
+}
+
+.my-form{
+	padding: 20px;
+}
+
+.my-form.form-group{
+	padding-bottom: 15px;
+}
+
+.my-form label{
+	display: block;
+}
+
+.my-form input[type = "text"], .my-form textarea{/*only for a particular type apply that, particular type of input*/
+	padding:8px;
+	width: 100%;
+}
+
+/*.my-form input[type = "submit"]{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border:none;
+} if i want to apply to all the buttons in the page the make it global*/
+
+/*.button{
+	background-color: #333;
+	color: #fff;
+	padding: 10px 15px;
+	border:none;
+}* pasting it above*/
+
+
+.block{
+	float: left;
+	width: 33%;
+	border:1px solid green;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#main-block{
+	float: left;
+	width: 70%;
+	padding:15px;
+	box-sizing: border-box;
+}
+
+#sidebar{
+	float: right;
+	width: 30%;
+	background-color: #333;
+	color: #fff;
+	padding:15px;
+	box-sizing: border-box;
+}
+
+/*below are examples for absolute and reletive positioning*/
+
+.p-box{
+	width: 1000px;
+	height: 500px;
+	border: 1px solid black;
+	margin-top: 15px;
+	position: relative;
+	background-image: url('../images/universe.jpg');  /*.. is to come out of the css and tyen get inside images*/
+    background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;/*both horizontally and vertically*/
+    background-position:center top; 
+}
+
+.p-box h1{
+	position: absolute;
+	top:100px;
+	left: 200px;
+}
+
+
+.p-box h2{
+	position: absolute;
+	bottom: 100px;
+	left: 200px;
+}
+
+.fix-me{
+	position: fixed;
+	top: 400px;
+}
+
+
+.my-list{
+	padding: 0;
+	padding-left: 20px;
+	
+}
+
+.my-list li:first-child{  /*pseudoclass*/
+
+  background: red; 
+
+}
+
+.my-list li:last-child{
+	background:green;
+}
+
+/*if we want the middle term*/
+
+.my-list li:nth-child(5){
+	color: red;
+	background: yellow;
+}
+
+.my-list li:nth-child(even){
+	background: grey;
+}

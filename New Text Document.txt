@@ -1,0 +1,21 @@
+inline css- directly in the html
+internal css-using style tags within the document in head section
+external css-linking an external.css file
+
+
+in css there are two types of forms
+web safe fonts 
+other fonts
+
+difference between id and class
+ id is unique
+class is not unique if we want to use it some where else we can do so
+
+padding- difference between element and it's border
+
+
+links have different states 
+1.hover
+2.active
+3.visited
+
